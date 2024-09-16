@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>model1</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/4879c593b5.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header class="header1">
+        <img id="logo" alt="" src="../assets/logov3.jpg">
+        <div class="search-container">
+            <input id="searchbar" type="text" placeholder="Serch">
+            <button class="Btn"id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>    
+    </header>
+
+    <header class="header2">
+        <button class="Btn">Our Paintings</button>
+        
+        <button class="Btn">Pictures</button>
+        
+        <button class="Btn">Posters</button>
+        
+        <button class="Btn">New Arrivals</button>
+    </header>
+    <div class="mobileAsideBtn" id="mobileAsideBtn">
+        <!-- Button to toggle sidebar visibility on mobile -->
+        <button class="toggle-sidebar-btn" id="sidebarBtn" onclick="toggleSidebar()">Navigation</button>
+        <button class="toggle-sidebar-btn" id="sidebarBtn" onclick="toggleSidebarR()">Type of art</button>
+    </div>
+     
+    <main>
+        <aside class="left-aside">
+            <h1>Navigation</h1>
+            <button class="Btn">Home</button>
+            <br>
+            <button class="Btn">Explore</button>
+            <br>
+            <button class="Btn">Notifications</button>
+            <br>
+            <button class="Btn">AI</button> 
+            <br>
+            <button class="Btn">Section5</button>
+            <br>
+            <button class="Btn">Section6</button>
+            <br>
+            <button class="Btn">Section7</button>
+        </aside>
+        <div class="content">
+            <div class="component">
+                <img src="../assets/art2.jpg" alt="Image 1">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam iusto voluptatibus nostrum aspernatur ab delectus corrupti quod eius modi praesentium fuga, accusamus molestias impedit earum vitae facilis eos! Explicabo, ut?</p>
+            </div>
+        
+            <div class="component">
+                <img src="../assets/cloud_after.jpg" alt="Image 2">
+                <p>Text below Image 2</p>
+            </div>
+        
+            <div class="component">
+                <img src="../assets/pexels-steve-1269968.jpg" alt="Image 3">
+                <p>Text below Image 3</p>
+            </div>
+        </div>
+        <aside class="right-aside">
+            <h1>Type of art</h1>
+            <button class="Btn">Landscapes</button>
+            <br>
+            <button class="Btn">Large Works</button>
+            <br>
+            <button class="Btn">Oil Paintings</button>
+            <br>
+            <button class="Btn">Abstract Art</button> 
+            <br>
+            <button class="Btn">Section5</button>
+            <br>
+            <button class="Btn">Section6</button>
+        </aside>
+    </main>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.left-aside');
+            if (sidebar.style.display === 'none' || sidebar.style.display === '') {
+                sidebar.style.display = 'block';
+            } else {
+                sidebar.style.display = 'none';
+            }
+        }
+        function toggleSidebarR() {
+            const sidebar = document.querySelector('.right-aside');
+            if (sidebar.style.display === 'none' || sidebar.style.display === '') {
+                sidebar.style.display = 'block';
+            } else {
+                sidebar.style.display = 'none';
+            }
+        }
+    </script>
+    
+</body>
+</html>
