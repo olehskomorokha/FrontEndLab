@@ -3,103 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>model1</title>
+    <title>Майстерня Мистецтв</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/4879c593b5.js" crossorigin="anonymous"></script>
-    
 </head>
 <body>
     <header class="header1">
-        <img id="logo" alt="" src="../assets/logo.png">
+        <img id="logo" alt="Логотип Майстерня Мистецтв" src="../assets/logo.png">
+        <h1>Майстерня Мистецтв</h1>
         <div class="search-container">
-            <input id="searchbar" type="text" placeholder="Serch">
-            
-            <button class="Btn"id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <input id="searchbar" type="text" placeholder="Пошук картин">
+            <button class="Btn" id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>    
     </header>
 
     <header class="header2">
-        <button class="Btn">Our Paintings</button>
-        
-        <button class="Btn">Pictures</button>
-        
-        <button class="Btn">Posters</button>
-        
-        <button class="Btn">New Arrivals</button>
+        <button class="Btn">Наші Картини</button>
+        <button class="Btn">Пейзажі</button>
+        <button class="Btn">Абстракція</button>
+        <button class="Btn">Новинки</button>
     </header>
+    
     <div class="mobileAsideBtn" id="mobileAsideBtn">
-        <!-- Button to toggle sidebar visibility on mobile -->
-        <button class="toggle-sidebar-btn" id="sidebarBtn" onclick="toggleSidebar()">Navigation</button>
-        <button class="toggle-sidebar-btn" id="sidebarBtn" onclick="toggleSidebarR()">Type of art</button>
+        <button class="toggle-sidebar-btn" id="sidebarBtn" onclick="toggleSidebar()">Навігація</button>
+        <button class="toggle-sidebar-btn" id="sidebarBtn" onclick="toggleSidebarR()">Типи Мистецтва</button>
     </div>
      
     <main>
         <aside class="left-aside">
-            <h1>Navigation</h1>
-            <button class="Btn">Home</button>
-            <br>
-            <button class="Btn">Explore</button>
-            <br>
-            <button class="Btn">Notifications</button>
-            <br>
-            <button class="Btn">AI</button> 
-            <br>
-            <button class="Btn">Section5</button>
-            <br>
-            <button class="Btn">Section6</button>
-            <br>
-            <button class="Btn">Section7</button>
+            <h1>Навігація</h1>
+            <button class="Btn">Головна</button><br>
+            <button class="Btn">Дослідити</button><br>
+            <button class="Btn">Сповіщення</button><br>
+            <button class="Btn">AI-Інструменти</button><br>
+            <button class="Btn">Про Нас</button><br>
+            <button class="Btn">Контакти</button>
         </aside>
+        
         <div class="content">
             <div class="component">
-                <img src="../assets/art2.jpg" alt="Image 1">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam iusto voluptatibus nostrum aspernatur ab delectus corrupti quod eius modi praesentium fuga, accusamus molestias impedit earum vitae facilis eos! Explicabo, ut?</p>
+                <img src="../assets/art2.jpg" alt="Пейзажне Мистецтво">
+                <p>Картини пейзажів, які захоплюють дух своїми мальовничими природними сценами. Вони створюють атмосферу спокою та гармонії.</p>
             </div>
         
             <div class="component">
-                <img src="../assets/cloud_after.jpg" alt="Image 2">
-                <p>Text below Image 2</p>
+                <img src="../assets/cloud_after.jpg" alt="Картина Висхідного Сонця">
+                <p>Ця картина відображає мить, коли сонце тільки-но з'являється на горизонті, залучаючи теплоту і яскравість у ваш день.</p>
             </div>
         
             <div class="component">
-                <img src="../assets/pexels-steve-1269968.jpg" alt="Image 3">
-                <p>Text below Image 3</p>
+                <img src="../assets/pexels-steve-1269968.jpg" alt="Абстрактне Мистецтво">
+                <p>Абстрактні роботи, що надихають на новий погляд на світ і відкриття. Ідеально підходять для сучасних інтер'єрів.</p>
             </div>
         </div>
+        
         <aside class="right-aside">
-            <h1>Type of art</h1>
-            <button class="Btn">Landscapes</button>
-            <br>
-            <button class="Btn">Large Works</button>
-            <br>
-            <button class="Btn">Oil Paintings</button>
-            <br>
-            <button class="Btn">Abstract Art</button> 
-            <br>
-            <button class="Btn">Section5</button>
-            <br>
-            <button class="Btn">Section6</button>
+            <h1>Типи Мистецтва</h1>
+            <button class="Btn">Пейзажі</button><br>
+            <button class="Btn">Великі Роботи</button><br>
+            <button class="Btn">Олійні Картини</button><br>
+            <button class="Btn">Абстракції</button><br>
+            <button class="Btn">Модерн</button><br>
+            <button class="Btn">Мінімалізм</button>
         </aside>
     </main>
 
     <script>
         function toggleSidebar() {
             const sidebar = document.querySelector('.left-aside');
-            if (sidebar.style.display === 'none' || sidebar.style.display === '') {
-                sidebar.style.display = 'block';
-            } else {
-                sidebar.style.display = 'none';
-            }
+            sidebar.style.display = sidebar.style.display === 'none' || sidebar.style.display === '' ? 'block' : 'none';
         }
+        
         function toggleSidebarR() {
             const sidebar = document.querySelector('.right-aside');
-            if (sidebar.style.display === 'none' || sidebar.style.display === '') {
-                sidebar.style.display = 'block';
-            } else {
-                sidebar.style.display = 'none';
-            }
+            sidebar.style.display = sidebar.style.display === 'none' || sidebar.style.display === '' ? 'block' : 'none';
         }
     </script>
-    
 </body>
 </html>

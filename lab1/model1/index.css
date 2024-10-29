@@ -1,6 +1,9 @@
 body{
     background-color: rgb(255, 218, 173);
 }
+h1{
+    margin: auto 0;
+}
 .header1 {
     display: flex;
     border: solid;
@@ -17,8 +20,8 @@ body{
     border-bottom-left-radius: 40px 40px;
     border-bottom-right-radius: 40px 40px;
   
-    justify-content: center; /* Centers the buttons horizontally */
-    align-items: center; /* Centers the buttons vertically */
+    justify-content: center; 
+    align-items: center; 
     margin: 0 auto;
     width: auto;
     margin-top: 5px;
@@ -30,16 +33,16 @@ body{
 .Btn {
     border: none;
     background-color: bisque;
-    color: black; /* Initial text color */
-    cursor: pointer; /* Pointer cursor on hover */
-    padding: 10px 20px; /* Add padding for better appearance */
-    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    color: black; 
+    cursor: pointer; 
+    padding: 10px 20px; 
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .Btn:hover {
-    background-color: lightcoral; /* Change background color on hover */
-    color: white; /* Change text color on hover */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+    background-color: lightcoral; 
+    color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
 }
 
 #logo {
@@ -50,7 +53,6 @@ body{
 }
 
 .search-container {
-    position: relative;
     display: flex;
     align-items: center;
     width: 100%;
@@ -59,8 +61,8 @@ body{
 }
 
 .search-container i {
-    margin-right: 10px; /* Adjust space between icon and input if needed */
-    font-size: 20px; /* Adjust icon size */
+    margin-right: 10px; 
+    font-size: 20px; 
 }
 
 #searchbar {
@@ -87,9 +89,9 @@ body{
     color: #333;
 }
 #searchBtn:hover{
-    background-color: rgb(248, 120, 120); /* Change background color on hover */
-    color: white; /* Change text color on hover */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+    background-color: rgb(248, 120, 120); 
+    color: white; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
 }
 main {
     margin-top: 10px;
@@ -123,47 +125,64 @@ aside {
     margin-left: 5px;
     margin-right: 5px;
     flex-grow: 1;
-    flex-direction: column; /* Stack components vertically */
-    align-items: center; /* Center the components horizontally */
-    gap: 20px; /* Space between each component */
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px; 
     padding: 20px;
     box-sizing: border-box;
     background-color: bisque;
 }
 
 .component {
-    width: 100%; /* Make the component fill the available space */
-    max-width: 800px; /* Optional: Limit the max width for large screens */
+    width: 100%; 
+    max-width: 800px;
     display: flex;
-    flex-direction: column; /* Stack image and text vertically */
-    align-items: center; /* Center image and text horizontally */
+    flex-direction: column; 
+    align-items: center; 
     text-align: center;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     padding: 10px;
     box-sizing: border-box;
 }
 
 .component img {
-    width: 100%; /* Ensure image takes full width of the component */
-    height: auto; /* Keep image aspect ratio */
+    width: 100%; 
+    height: auto; 
 }
 
 .component p {
     margin-top: 10px;
 }
 
-/* Media query for smartphones */
+
 @media (max-width: 768px) {
     .header1 {
-        flex-direction: column; /* Stack logo and search bar vertically */
+        display: flex;
+        flex-direction: column; 
         height: auto;
         padding: 10px;
+        align-items: center;
     }
 
     .header2 {
         flex-direction: column;
         width: 100%;
         height: auto;
+    }
+    .search-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-right: 8000px;
+    }
+    #logo{
+        margin: 0 auto;
+    }
+    .header1 h1{
+        margin: 0 auto;
+    }
+    .header1 div{
+        margin: 0 auto;
     }
     #searchbar {
         padding: 8px;
@@ -174,7 +193,7 @@ aside {
         border-radius: 4px;
         padding-right: 40px;
     }
-    
+
     #searchBtn {
         display: flex;
         width: 20px;
@@ -195,9 +214,9 @@ aside {
         margin-bottom: 10px; 
     }
     .Btn:hover {
-        background-color: lightcoral; /* Change background color on hover */
-        color: white; /* Change text color on hover */
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+        background-color: lightcoral; 
+        color: white; 
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
     }
     #searchbar {
         width: 100%;

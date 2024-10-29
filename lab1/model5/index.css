@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    width: 700px;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+.header img{
+    width: 400px;
+    height: 400px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 14px;
+}
+.header div{
+    position: relative;
+    right: 70px;
+    margin: auto 0;
+}
+.header h1 {
+    font-size: 36px;
+    margin: auto 0;
+}
+
+.header p {
+    font-size: 18px;
+    color: #666;
+    margin: auto 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.content {
+    display: flex;
+    overflow: hidden;
+}
+
+.section {
+    float: left;
+    width: 50%;
+    margin: 0;
+    margin-right: 50px;
+    padding: 15px;
+    background-color: #e0e0e0;
+}
+.section img {
+    float: left;
+    width: 50%;
+    height: 100%;
+    margin-right: 20px;
+}
+
+.subscribe {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.subscribe input[type="email"] {
+    padding: 10px;
+    width: 400px;
+}
+
+.subscribe button {
+    padding: 10px 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+footer a{
+    color: white;
+}
+footer li {
+    padding: 0;
+    color: white;
+    display: inline;
+    padding: 10px;
+}
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .header {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+    }
+
+    .header img {
+        width: 400px;
+        height: 400px;
+        margin: auto 14px;
+    }
+
+    
+    .header div h1 {
+        font-size: 50px;
+    }
+
+    .header div p {
+        font-size: 22px;
+    }
+    .container{
+        margin: 0;
+        width: 100%;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .section {
+        width: 100%;
+    
+    }
+    .subscribe input[type="email"] {
+        padding: 10px;
+        height: 50px;
+        width: 90%;
+    }
+    .subscribe button {
+        width: 200px;
+        height: 100px;
+        padding: 10px 20px;
+    }
+    .section img {
+        width: 50%;
+        float: left;
+        padding: 20px;
+    }
+    .section div {
+        margin: 0;
+        padding: 50px;
+    }
+
+    footer ul {
+        display: block;
+        padding: 10px;
+    }
+}

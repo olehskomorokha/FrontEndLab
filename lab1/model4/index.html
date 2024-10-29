@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css" />
+    <title>Art Gallery</title>
+</head>
+<body>
+    <header>
+        <img src="../assets/logo.png" alt="logo">
+        <h1>МайстерняМистецтв</h1>
+    </header>
+    <div class="content">
+        <div class="block-container">
+            <!-- Block 1 -->
+            <div class="block">
+                <img src="../assets/cloud_after.jpg" alt="painting of a cloudy sky">
+                <div>
+                    <h1>Небо після Бурі</h1>
+                    <h4>10 жовтня 2024</h4>
+                    <p>Картина зображає спокійне небо після бурхливої бурі. М'які кольори та тонка гра світла підкреслюють тендітність природи та її здатність до відновлення.</p>
+                </div>
+            </div>
+            <!-- Block 2 -->
+            <div class="block">
+                <img src="../assets/cloud_after.jpg" alt="painting of a cloudy sky">
+                <img src="../assets/pexels-steve-1269968.jpg" alt="sunset over mountains">
+                <div>
+                    <h1>Природа та Спокій</h1>
+                    <h4>14 вересня 2024</h4>
+                    <p>Ця композиція розповідає про красу гірських заходів сонця, де спокій та велич природних ландшафтів гармонійно поєднуються, створюючи атмосферу роздумів і натхнення.</p>
+                </div>
+            </div>
+            <!-- Block 3 -->
+            <div class="block">
+                <img src="../assets/art2.jpg" alt="abstract painting with vibrant colors">
+                <div>
+                    <h1>Абстрактна Енергія</h1>
+                    <h4>22 серпня 2024</h4>
+                    <p>Сучасна абстракція, що передає динаміку кольору та руху. Кожна лінія та пляма на полотні взаємодіють, створюючи відчуття енергії та життя.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar Content -->
+        <aside>
+            <div class="aside-block">
+                <h2>Картини для Інтер’єру</h2>
+                <p>Обираючи картини для прикрашення інтер'єру, важливо враховувати атмосферу, яку вони створюють. Ніжні пастельні тони сприяють спокою, а яскраві кольори додають енергії.</p>
+            </div>
+            <div class="aside-block">
+                <h2>Техніки Живопису</h2>
+                <p>Від класичного масляного живопису до сучасного цифрового мистецтва — кожна техніка відкриває нові можливості для художника і додає унікальний стиль до картин.</p>
+            </div>
+            <div class="aside-block">
+                <h2>Виставки та Події</h2>
+                <p>Дізнавайтесь про найновіші події у світі мистецтва! Виставки, аукціони та зустрічі з митцями — це шанс побачити шедеври та знайти натхнення для власної творчості.</p>
+            </div>
+        </aside>
+    </div>
+    <!-- Script for adjusting image sizes based on number of images in block -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth >= 768) {
+                const blocks = document.querySelectorAll(".block");
+
+                blocks.forEach(block => {
+                    const images = block.querySelectorAll("img");
+
+                    // Перевіряємо, чи є рівно 2 зображення у блоці
+                    if (images.length === 2) {
+                        images.forEach(img => {
+                            img.style.width = "300px";
+                            img.style.height = "400px";
+                        });
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    height: auto;
+    justify-content: center;
+    border-bottom: 2px solid black;
+}
+header h1{
+    color: black;
+    margin: auto 0;
+}
+header img{
+    width: 130px;
+    height: 100px;
+    margin: auto 0;
+    margin-left: 14px;
+}
+.content{
+    display: flex;
+}
+.block{
+    display: flex;
+    margin: 20px;
+    border: 2px solid black;
+}
+.block div{
+    display: flex;
+    margin: 20px;
+    padding: 0;
+    flex-direction: column;
+}
+.block div p{
+    height: auto;
+}
+.block div h4{
+    height: auto;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+.block div h1{
+    margin: 0;
+    padding: 0;
+}
+.block img{
+    width: 600px;
+    height: 400px;
+}
+aside{
+    width: 30%;
+    border-left: 2px solid black;
+}
+.aside-block{
+    margin: 15px;
+    margin-top: 40px;
+}
+.aside-block h2{
+    margin: 0;
+}
+
+/* Адаптивні стилі для смартфонів */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header img {
+        width: 100px;
+        height: 80px;
+        margin: 10px auto;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .block {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .block img {
+        width: 100%;
+        height: auto;
+    }
+
+    .block div {
+        margin: 10px;
+        padding: 0;
+    }
+
+    aside {
+        width: 100%;
+        border-left: none;
+        border-top: 2px solid black;
+        margin-top: 20px;
+    }
+
+    .aside-block {
+        margin: 15px;
+    }
+}

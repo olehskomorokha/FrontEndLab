@@ -2,6 +2,11 @@ body{
     background-color: rgb(255, 218, 173);
     margin: 50px;
 }
+h1{
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 .header1 {
     display: flex;
     border: solid;
@@ -15,7 +20,8 @@ body{
 #logo {
     width: 130px;
     height: 100px;
-    margin-top: 14px;
+    margin-top: auto;
+    margin-bottom: auto;
     margin-left: 14px;
 }
 #register-btn{
@@ -175,14 +181,21 @@ footer table{
 }
 /* Загальні стилі для смартфонів */
 @media (max-width: 450px) {
-
+    .body{
+        margin: 0px;
+        padding: 0px;
+    }
     .header1 {
+        display: flex;
+        justify-items: center;
+        align-items: center;
         flex-direction: column;
-        width: auto;
         height: auto;
         padding: 20px;
     }
-
+    .header1 h1{
+        font-size: 24px;
+    }
     #logo {
         width: 50px;
         height: 50px;
